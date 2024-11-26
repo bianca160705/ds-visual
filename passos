@@ -40,8 +40,27 @@ git commit -m "mensagem commit"
 git push
 
 passos para fazer o projeto (parte 2)
+1. criar projeto:
+npx create-react-app front --template typescript
+...
+npm install -g npm
+...
+- para startar o projeto:
+npm start
+- apagar arquivos:
+	    deixar so index.html no public
+	    deixar App.tsx, index.tsx e react-app-env.d.ts no src
+- todo componente que criar a primeira letra tem que ser maiúscula (exemplo: ProdutoListar.tsx)
+
+navegacao (instalar biblioteca)
+- para de rodar o front e no terminal do front:
+- npm install react-router-dom @types/react-router-dom
+
+
+
+problema com adm:
 1 - abrir o powershell como administrador
-2 - Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+2 - Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process // problema com adm
 4 - npm install -g npm (talvez)
 3 - npx create-react-app front --template typescript
 4 - abrir o vscode
