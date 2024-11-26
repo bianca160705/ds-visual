@@ -1,0 +1,54 @@
+# passos
+
+passos para fazer o projeto (parte 1)
+1 - criar uma solução
+dotnet new sln --output API
+2 - criar um projeto web (entrar na solução para criar o projeto)
+dotnet new web --name API
+3 - adicionar o projeto na solução
+dotnet sln add API
+4 - dotnet run para pegar o local host e rodar o código
+5 - criar um arquivo teste.http (custom file)
+GET http://localhost:5199
+6 - criar um pasta models 
+7 - criar a classe Pokemon dentro da pasta models (class)
+
+conexão da aplicação com banco de dados
+obs: tem que baixar dentro da pasta do projeto
+8 - dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+9 - dotnet add package Microsoft.EntityFrameworkCore.Design
+
+10 - criar a classe AppDataContext (class)
+
+rodar os comandos da migração para criar o banco de dados
+11 - dotnet tool install --global dotnet-ef
+12 - dotnet ef migrations add InitialCreate
+13 - dotnet ef database update (comando que cria o banco de dados)
+
+obs: lembrar de dar um espaço depois de Content-Type: application/json
+
+passos para comitar no git
+criar uma pasta com o nome projeto 
+shift + botao direito nessa pasta criada para entrar no powershell 
+git clone link do repositorio
+vai criar uma pasta do repositorio dentro do projeto ai você arrasta a api dentro dessa pasta
+shift + botao direito na pasta clonada
+git status
+git add .
+git status
+git commit -m "mensagem commit"
+git push
+
+passos para fazer o projeto (parte 2)
+1 - abrir o powershell como administrador
+2 - Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+4 - npm install -g npm (talvez)
+3 - npx create-react-app front --template typescript
+4 - abrir o vscode
+5 - apagar arquivos:
+	    deixar so index.html no public
+	    deixar App.tsx, index.tsx e react-app-env.d.ts no src
+
+6 - npm install react-router-dom @types/react-router-dom
+
+obs: npm start para rodar o codigo
