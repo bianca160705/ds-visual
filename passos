@@ -56,6 +56,37 @@ navegacao (instalar biblioteca)
 - para de rodar o front e no terminal do front:
 - npm install react-router-dom @types/react-router-dom
 
+4 - modificar o App.tsx:
+import React from "react";
+
+function App() {
+  return (
+    <div>
+      <h1>Projeto base em React com TypeScript</h1>
+    </div>
+  );
+}
+
+export default App;
+
+5 - modificar o index.tsx:
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./styles.css";
+
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+6 - npm install react-router-dom @types/react-router-dom
+7 - npm install axios ou npm i axios @types/axios
+
+obs: npm start para rodar o codigo
+
 
 
 problema com adm:
